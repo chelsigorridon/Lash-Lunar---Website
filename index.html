@@ -11,6 +11,8 @@
     <main>
 
    <nav class="bg-[#F4F4F4] w-full h-16 flex justify-end items-center">
+    
+
      <ul class="flex flex-row text-[#6E6A64] justify-between items-center gap-2 mr-10 hidden md:flex ">
     <li class="text-xs uppercase tracking-widest text-[#6E6A64] px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors ">Home</li>
     <li class="text-xs uppercase tracking-widest text-[#6E6A64] px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors]" >About</li>
@@ -20,11 +22,11 @@
     <li class="text-xs uppercase tracking-widest text-[#6E6A64] px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors">Gift Vouchers</li>
    </ul>
 
-   <button class="text-xs uppercase tracking-widest text-[#6E6A64] border border-[#6E6A64] px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors mr-10 hidden md-block">
+   <button class="text-xs uppercase tracking-widest text-[#6E6A64] border border-[#6E6A64] px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors mr-10 hidden md:inline-block">
     Contact
    </button>
    
-    <img src="/images/Menu.svg" alt="icon" width="24" class="w-10 h-10 md:hidden" />
+    <img src="/images/Menu.svg" alt="icon" width="24" class="w-10 h-10 md:hidden"/>
    
 </nav>
 
@@ -34,11 +36,11 @@
 
 <section class="w-full py-12 px-6 lg:px-20">
   <div class="max-w-3xl">
-    <h1 class=" h1 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-tan text-[#F4F4F4] tracking-wide mb-6">
+    <h1 class=" h1 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-tan text-[#F0F0F0] tracking-wide mb-6">
       Welcome, I'm Huda
     </h1>
 
-    <p class="text-sm sm:text-base md:text-base text-[#F4F4F4] leading-relaxed space-y-4">
+    <p class="text-sm sm:text-base md:text-base text-[#F0F0F0] leading-relaxed space-y-4">
       Hello! I'm Huda Hendricks, also known as Lunar — your dedicated lash and brow technician, here to enhance your natural beauty with precision and care.
       <br><br>
       With a passion for creating stunning lash extensions and perfectly shaped brows, I strive to provide a relaxing, luxurious experience that leaves you feeling confident and pampered. I love meeting new faces and catching up with familiar ones — every appointment is personal to me.
@@ -55,8 +57,8 @@
    
 <section class="w-full py-12 px-6 lg:px-20">
     <div class="max-w-3xl"> 
-<h1 class=" h1 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-tan text-[#F4F4F4] tracking-wide ">
-      Services
+<h1 class=" h1 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-tan text-[#F0F0F0] tracking-wide ">
+      Services & Prices
     </h1>
     </div>
 
@@ -64,7 +66,7 @@
   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4">
     
     <!-- Service Card -->
-    <div class="bg-[#F4F4F4] w-full min-h-[400px] flex flex-col rounded-2xl p-5 transition-hover hover:shadow-md">
+    <div class="bg-[#F0F0F0] w-full min-h-[400px] flex flex-col rounded-2xl p-5 transition-hover hover:shadow-md">
       
       <!-- Title -->
       <h2 class="font-tan text-lg md:text-xl mb-4 text-[#6E6A64] text-center">
@@ -82,15 +84,24 @@
 
       <!-- Price & Action (Pinned to bottom) -->
       <div class="mt-auto pt-4 border-t border-[#6E6A64]/10 text-center">
-        <span class="block text-[#6E6A64] font-semibold text-lg mb-2">R 450.00</span>
-        <button class="text-xs uppercase tracking-widest text-[#6E6A64] border border-[#6E6A64] px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors">
-          Book Now
-        </button>
-      </div>
+  <span class="block text-[#6E6A64] font-semibold text-lg mb-2">R 450.00</span>
+
+  <!-- Link wraps the button -->
+ <a href="https://www.fresha.com/a/lash-lunar-cape-town-14-central-square-axpqsp23" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     class="inline-block mt-2">
+    
+    <button class="text-xs uppercase tracking-widest text-[#6E6A64] border border-[#6E6A64] px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors">
+      Book Now
+    </button>
+    
+  </a>
+</div>
     </div>
 
     <!-- Service Card -->
-    <div class="bg-[#F4F4F4] w-full min-h-[400px] flex flex-col rounded-2xl p-5 transition-hover hover:shadow-md">
+    <div class="bg-[#F0F0F0] w-full min-h-[400px] flex flex-col rounded-2xl p-5 transition-hover hover:shadow-md">
       
       <!-- Title -->
       <h2 class="font-tan text-lg md:text-xl mb-4 text-[#6E6A64] text-center">
@@ -109,14 +120,23 @@
       <!-- Price & Action (Pinned to bottom) -->
       <div class="mt-auto pt-4 border-t border-[#6E6A64]/10 text-center">
         <span class="block text-[#6E6A64] font-semibold text-lg mb-2">R 450.00</span>
-        <button class="text-xs uppercase tracking-widest text-[#6E6A64] border border-[#6E6A64] px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors">
-          Book Now
-        </button>
+
+       <!-- Link wraps the button -->
+     <a href="https://www.fresha.com/a/lash-lunar-cape-town-14-central-square-axpqsp23" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     class="inline-block mt-2">
+    
+    <button class="text-xs uppercase tracking-widest text-[#6E6A64] border border-[#6E6A64] px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors">
+      Book Now
+    </button>
+     </a>
+
       </div>
     </div>
 
     <!-- Service Card -->
-    <div class="bg-[#F4F4F4] w-full min-h-[400px] flex flex-col rounded-2xl p-5 transition-hover hover:shadow-md">
+    <div class="bg-[#F0F0F0] w-full min-h-[400px] flex flex-col rounded-2xl p-5 transition-hover hover:shadow-md">
       
       <!-- Title -->
       <h2 class="font-tan text-lg md:text-xl mb-4 text-[#6E6A64] text-center">
@@ -135,14 +155,21 @@
       <!-- Price & Action (Pinned to bottom) -->
       <div class="mt-auto pt-4 border-t border-[#6E6A64]/10 text-center">
         <span class="block text-[#6E6A64] font-semibold text-lg mb-2">R 450.00</span>
-        <button class="text-xs uppercase tracking-widest text-[#6E6A64] border border-[#6E6A64] px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors">
-          Book Now
-        </button>
+          <!-- Link wraps the button -->
+     <a href="https://www.fresha.com/a/lash-lunar-cape-town-14-central-square-axpqsp23" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     class="inline-block mt-2">
+    
+    <button class="text-xs uppercase tracking-widest text-[#6E6A64] border border-[#6E6A64] px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors">
+      Book Now
+    </button>
+     </a>
       </div>
     </div>
 
     <!-- Service Card -->
-    <div class="bg-[#F4F4F4] w-full min-h-[400px] flex flex-col rounded-2xl p-5 transition-hover hover:shadow-md">
+    <div class="bg-[#F0F0F0] w-full min-h-[400px] flex flex-col rounded-2xl p-5 transition-hover hover:shadow-md">
       
       <!-- Title -->
       <h2 class="font-tan text-lg md:text-xl mb-4 text-[#6E6A64] text-center">
@@ -160,14 +187,21 @@
       <!-- Price & Action (Pinned to bottom) -->
       <div class="mt-auto pt-4 border-t border-[#6E6A64]/10 text-center">
         <span class="block text-[#6E6A64] font-semibold text-lg mb-2">R 450.00</span>
-        <button class="text-xs uppercase tracking-widest text-[#6E6A64] border border-[#6E6A64] px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors">
-          Book Now
-        </button>
+          <!-- Link wraps the button -->
+     <a href="https://www.fresha.com/a/lash-lunar-cape-town-14-central-square-axpqsp23" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     class="inline-block mt-2">
+    
+    <button class="text-xs uppercase tracking-widest text-[#6E6A64] border border-[#6E6A64] px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors">
+      Book Now
+    </button>
+     </a>
       </div>
     </div>
 
     <!-- Service Card -->
-    <div class="bg-[#F4F4F4] w-full min-h-[400px] flex flex-col rounded-2xl p-5 transition-hover hover:shadow-md">
+    <div class="bg-[#F0F0F0] w-full min-h-[400px] flex flex-col rounded-2xl p-5 transition-hover hover:shadow-md">
       
       <!-- Title -->
       <h2 class="font-tan text-lg md:text-xl mb-4 text-[#6E6A64] text-center">
@@ -186,14 +220,21 @@
       <!-- Price & Action (Pinned to bottom) -->
       <div class="mt-auto pt-4 border-t border-[#6E6A64]/10 text-center">
         <span class="block text-[#6E6A64] font-semibold text-lg mb-2">R 450.00</span>
-        <button class="text-xs uppercase tracking-widest text-[#6E6A64] border border-[#6E6A64] px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors">
-          Book Now
-        </button>
+         <!-- Link wraps the button -->
+     <a href="https://www.fresha.com/a/lash-lunar-cape-town-14-central-square-axpqsp23" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     class="inline-block mt-2">
+    
+    <button class="text-xs uppercase tracking-widest text-[#6E6A64] border border-[#6E6A64] px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors">
+      Book Now
+    </button>
+     </a>
       </div>
     </div>
 
     <!-- Service Card -->
-    <div class="bg-[#F4F4F4] w-full min-h-[400px] flex flex-col rounded-2xl p-5 transition-hover hover:shadow-md">
+    <div class="bg-[#F0F0F0] w-full min-h-[400px] flex flex-col rounded-2xl p-5 transition-hover hover:shadow-md">
       
       <!-- Title -->
       <h2 class="font-tan text-lg md:text-xl mb-4 text-[#6E6A64] text-center">
@@ -212,14 +253,21 @@
       <!-- Price & Action (Pinned to bottom) -->
       <div class="mt-auto pt-4 border-t border-[#6E6A64]/10 text-center">
         <span class="block text-[#6E6A64] font-semibold text-lg mb-2">R 450.00</span>
-        <button class="text-xs uppercase tracking-widest text-[#6E6A64] border border-[#6E6A64] px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors">
-          Book Now
-        </button>
+          <!-- Link wraps the button -->
+     <a href="https://www.fresha.com/a/lash-lunar-cape-town-14-central-square-axpqsp23" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     class="inline-block mt-2">
+    
+    <button class="text-xs uppercase tracking-widest text-[#6E6A64] border border-[#6E6A64] px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors">
+      Book Now
+    </button>
+     </a>
       </div>
     </div>
 
 <!-- Service Card -->
-    <div class="bg-[#F4F4F4] w-full min-h-[400px] flex flex-col rounded-2xl p-5 transition-hover hover:shadow-md">
+    <div class="bg-[#F0F0F0] w-full min-h-[400px] flex flex-col rounded-2xl p-5 transition-hover hover:shadow-md">
       
       <!-- Title -->
       <h2 class="font-tan text-lg md:text-xl mb-4 text-[#6E6A64] text-center">
@@ -238,14 +286,21 @@
       <!-- Price & Action (Pinned to bottom) -->
       <div class="mt-auto pt-4 border-t border-[#6E6A64]/10 text-center">
         <span class="block text-[#6E6A64] font-semibold text-lg mb-2">R 450.00</span>
-        <button class="text-xs uppercase tracking-widest text-[#6E6A64] border border-[#6E6A64] px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors">
-          Book Now
-        </button>
+          <!-- Link wraps the button -->
+     <a href="https://www.fresha.com/a/lash-lunar-cape-town-14-central-square-axpqsp23" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     class="inline-block mt-2">
+    
+    <button class="text-xs uppercase tracking-widest text-[#6E6A64] border border-[#6E6A64] px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors">
+      Book Now
+    </button>
+     </a>
       </div>
     </div>
 
     <!-- Service Card -->
-    <div class="bg-[#F4F4F4] w-full min-h-[400px] flex flex-col rounded-2xl p-5 transition-hover hover:shadow-md">
+    <div class="bg-[#F0F0F0] w-full min-h-[400px] flex flex-col rounded-2xl p-5 transition-hover hover:shadow-md">
       
       <!-- Title -->
       <h2 class="font-tan text-lg md:text-xl mb-4 text-[#6E6A64] text-center">
@@ -263,22 +318,66 @@
       <!-- Price & Action (Pinned to bottom) -->
       <div class="mt-auto pt-4 border-t border-[#6E6A64]/10 text-center">
         <span class="block text-[#6E6A64] font-semibold text-lg mb-2">R 450.00</span>
-        <button class="text-xs uppercase tracking-widest text-[#6E6A64] border border-[#6E6A64] px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors">
-          Book Now
-        </button>
+          <!-- Link wraps the button -->
+     <a href="https://www.fresha.com/a/lash-lunar-cape-town-14-central-square-axpqsp23" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     class="inline-block mt-2">
+    
+    <button class="text-xs uppercase tracking-widest text-[#6E6A64] border border-[#6E6A64] px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors">
+      Book Now
+    </button>
+     </a>
       </div>
     </div>
-
-
-
-
-
-
-    <!-- Repeat for other cards... -->
   </div>
-</section>
+
+
 
 </section>
+
+<!---- Booking Policy-->
+
+<section class="w-full py-12 px-6 lg:px-20">
+    <div class="max-w-3xl"> 
+    <h1 class=" h1 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-tan text-[#F4F4F4] tracking-wide flex">
+      Booking Policy
+    </h1>
+    </div>
+
+    <section class="py-12">
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4">
+    
+    <!-- Service Card -->
+    <div class="bg-[#F0F0F0] w-full min-h-[400px] flex flex-col rounded-2xl p-5 transition-hover hover:shadow-md">
+      
+      <!-- Title -->
+      <h2 class="font-tan text-lg md:text-xl mb-4 text-[#6E6A64] text-center">
+        Classic Lashes
+         </div>
+          <!-- Service Card -->
+    <div class="bg-[#F0F0F0] w-full min-h-[400px] flex flex-col rounded-2xl p-5 transition-hover hover:shadow-md">
+      
+      <!-- Title -->
+      <h2 class="font-tan text-lg md:text-xl mb-4 text-[#6E6A64] text-center">
+        Classic Lashes
+         </div>
+          <!-- Service Card -->
+    <div class="bg-[#F0F0F0] w-full min-h-[400px] flex flex-col rounded-2xl p-5 transition-hover hover:shadow-md">
+      
+      <!-- Title -->
+      <h2 class="font-tan text-lg md:text-xl mb-4 text-[#6E6A64] text-center">
+        Classic Lashes
+         </div>
+          <!-- Service Card -->
+    <div class="bg-[#F0F0F0] w-full min-h-[400px] flex flex-col rounded-2xl p-5 transition-hover hover:shadow-md">
+      
+      <!-- Title -->
+      <h2 class="font-tan text-lg md:text-xl mb-4 text-[#6E6A64] text-center">
+        Classic Lashes
+         </div>
+    </section>
+
 
 </main>
 </body>
