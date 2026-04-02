@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'TAN-PEARL';
+  src: url('/fonts/TAN-PEARL-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.h1{
+    font-family: 'TAN-PEARL', serif;
+    font-weight: 400;
+    color: #F4F4F4;
+    
+
+}
