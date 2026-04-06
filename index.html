@@ -10,6 +10,16 @@
 <body class="bg-[#95A387] text-[#F4F4F4]">
 <main>
 
+  <!-- Lines in services are all in diffrent places , fix that 
+       Headings in booking policy are not lined up 
+       Links for booking need to be added
+       Pre and Post aftercare buttons need to be added
+       Booking cards need hover effect
+       complete gift voucher sections
+       Contact section needs refinement 
+       Footer needs refinement 
+       Mobile version needs refinement -->
+
     <!-- NAV -->
   <nav class="bg-[#F4F4F4] w-full h-16 flex justify-center items-center px-6 sticky top-0 z-50">
     <ul class="hidden md:flex flex-row text-[#6E6A64] items-center gap-1 mr-10">
@@ -93,247 +103,248 @@
 
 </section>
 
-  <!-- SERVICES     NB**** Images need to be same sizes , get images for half set and customised-->
-  <section id="services" class="w-full py-16 px-6 mx-auto lg:px-20 max-w-screen-2xl">
-    <div class="relative">
+ <!-- SERVICES -->
+<section id="services" class="w-full py-16 px-6 mx-auto lg:px-20 max-w-screen-2xl">
+  <div class="relative">
 
-     <!-- Sparkle Icon: Updated to Dark Green -->
+    <button id="toggle-services" class="h1 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-tan text-[#F0F0F0] tracking-wide flex items-center gap-2 ">
+      Services &amp; Prices
+      <span id="arrow" class="transform transition-transform duration-300 group-hover:translate-x-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 stroke-current" fill="none" viewBox="0 0 24 24" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+        </svg>
+      </span>
+    </button>
 
-      <button id="toggle-services" class=" h1 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-tan text-[#F0F0F0] tracking-wide flex items-center gap-2">
-          
-        Services &amp; Prices
-        <span id="arrow" class="transform transition-transform duration-300 group-hover:translate-x-2">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 stroke-current" fill="none" viewBox="0 0 24 24" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
-          </svg>
-        </span>
-      </button>
+    <div id="services-container" class="py-10 hidden">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
 
-      <div id="services-container" class="py-10 hidden">
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-
-          <!-- Classic Lashes -->
-          <div class="bg-[#F0F0F0] w-full min-h-[400px] flex flex-col rounded-2xl p-5 hover:shadow-md transition-shadow">
-            <h2 class="font-tan text-lg md:text-xl mb-4 text-[#6E6A64] text-center">Classic Lashes</h2>
-            <div class="flex-grow flex items-center justify-center mb-4">
-              <img src="/images/classicedited.png" alt="Classic Lash Extensions" class="w-full h-48 lg:h-56 rounded-xl object-cover shadow-sm">
+        <!-- Classic -->
+        <div class="bg-[#F0F0F0] w-full min-h-[450px] flex flex-col rounded-2xl p-5 hover:shadow-[0_4px_15px_rgba(22,78,65,0.4)] transition-shadow duration-500 ease-in-out"> ">
+          <h2 class="font-tan text-lg md:text-xl mb-4 text-[#6E6A64] text-center">Classic Lashes</h2>
+          <div class="flex-grow flex items-center justify-center mb-4">
+            <img src="/images/classicedited.png" class="w-full h-48 lg:h-56 rounded-xl object-cover shadow-sm">
+          </div>
+          <div class="mt-auto pt-4 border-t border-[#6E6A64]/10">
+            <div class="space-y-1 mb-4 text-sm text-[#6E6A64]">
+              <div class="flex justify-between"><span>Full Set</span><span class="font-semibold">R500</span></div>
+              <div class="flex justify-between"><span>3 Week Fill</span><span class="font-semibold">R450</span></div>
+              <div class="flex justify-between"><span>2 Week Fill</span><span class="font-semibold">R350</span></div>
             </div>
+            <div class="text-center">
+              <a href="https://www.fresha.com/..."><button class="text-xs uppercase tracking-widest text-[#6E6A64] border px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white">Book Now</button></a>
+            </div>
+          </div>
+        </div>
 
-            <!-- Updated Pricing Section -->
-  <div class="mt-auto pt-4 border-t border-[#6E6A64]/10">
-    <div class="space-y-1 mb-4 text-[#6E6A64] text-sm">
-      <div class="flex justify-between"><span>Full Set</span> <span class="font-semibold">R500</span></div>
-      <div class="flex justify-between"><span>3 Week Fill</span> <span class="font-semibold">R450</span></div>
-      <div class="flex justify-between"><span>2 Week Fill</span> <span class="font-semibold">R350</span></div>
-    </div>
-    
-    <div class="text-center">
-       <a href="https://www.fresha.com/a/lash-lunar-cape-town-14-central-square-axpqsp23/booking?pId=1222548&cartId=397b64dd-e3f1-4c1f-ba9d-db5ce9aa1f05" target="_blank" rel="noopener noreferrer">
-        <button class="text-xs uppercase tracking-widest text-[#6E6A64] border border-[#6E6A64] px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors">Book Now</button>
-      </a>
-    </div>
-  </div>
-</div>
+        <!-- Volume -->
+        <div class="bg-[#F0F0F0] w-full min-h-[450px] flex flex-col rounded-2xl p-5 hover:shadow-[0_4px_15px_rgba(22,78,65,0.4)] transition-shadow duration-500 ease-in-out">
+          <h2 class="font-tan text-lg md:text-xl mb-4 text-center text-[#6E6A64]">Volume Lashes</h2>
+          <div class="flex-grow flex items-center justify-center mb-4">
+            <img src="/images/Volume.jpeg" class="w-full h-48 lg:h-56 rounded-xl object-cover shadow-sm">
+          </div>
+          <div class="mt-auto pt-4 border-t border-[#6E6A64]/10">
+            <div class="space-y-1 mb-4 text-sm text-[#6E6A64]">
+              <div class="flex justify-between"><span>Full Set</span><span class="font-semibold">R750</span></div>
+              <div class="flex justify-between"><span>3 Week Fill</span><span class="font-semibold">R650</span></div>
+              <div class="flex justify-between"><span>2 Week Fill</span><span class="font-semibold">R550</span></div>
+            </div>
+            <div class="text-center">
+              <button class="text-xs uppercase tracking-widest text-[#6E6A64] border px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white">Book Now</button>
+            </div>
+          </div>
+        </div>
 
-        <!-- Volume Lashes -->
-<div class="bg-[#F0F0F0] w-full min-h-[450px] flex flex-col rounded-2xl p-5 hover:shadow-md transition-shadow">
-  <h2 class="font-tan text-lg md:text-xl mb-4 text-[#6E6A64] text-center">Volume Lashes</h2>
-  <div class="flex-grow flex items-center justify-center mb-4">
-    <img src="/images/Volume.jpeg" alt="Volume Lashes" class="w-full h-40 lg:h-48 rounded-xl object-cover shadow-sm">
-  </div>
-  <div class="mt-auto pt-4 border-t border-[#6E6A64]/10">
-    <div class="space-y-1 mb-4 text-[#6E6A64] text-sm">
-      <div class="flex justify-between"><span>Full Set</span> <span class="font-semibold">R750</span></div>
-      <div class="flex justify-between"><span>3 Week Fill</span> <span class="font-semibold">R650</span></div>
-      <div class="flex justify-between"><span>2 Week Fill</span> <span class="font-semibold">R550</span></div>
-    </div>
-    <div class="text-center">
-      <a href="https://www.fresha.com/a/lash-lunar-cape-town-14-central-square-axpqsp23/booking?pId=1222548&cartId=397b64dd-e3f1-4c1f-ba9d-db5ce9aa1f05" target="_blank" rel="noopener noreferrer">
-        <button class="text-xs uppercase tracking-widest text-[#6E6A64] border border-[#6E6A64] px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors">Book Now</button>
-      </a>
-    </div>
-  </div>
-</div>
+        <!-- Hybrid -->
+        <div class="bg-[#F0F0F0] w-full min-h-[450px] flex flex-col rounded-2xl p-5 hover:shadow-[0_4px_15px_rgba(22,78,65,0.4)] transition-shadow duration-500 ease-in-out">
+          <h2 class="font-tan text-lg md:text-xl mb-4 text-center text-[#6E6A64]">Hybrid Lashes</h2>
+          <div class="flex-grow flex items-center justify-center mb-4">
+            <img src="/images/Hybridedited.png" class="w-full h-48 lg:h-56 rounded-xl object-cover shadow-sm">
+          </div>
+          <div class="mt-auto pt-4 border-t border-[#6E6A64]/10">
+            <div class="space-y-1 mb-4 text-sm text-[#6E6A64]">
+              <div class="flex justify-between"><span>Full Set</span><span class="font-semibold">R650</span></div>
+              <div class="flex justify-between"><span>3 Week Fill</span><span class="font-semibold">R550</span></div>
+              <div class="flex justify-between"><span>2 Week Fill</span><span class="font-semibold">R500</span></div>
+            </div>
+            <div class="text-center">
+              <button class="text-xs uppercase tracking-widest text-[#6E6A64] border px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white">Book Now</button>
+            </div>
+          </div>
+        </div>
 
-<!-- Hybrid Lashes -->
-<div class="bg-[#F0F0F0] w-full min-h-[450px] flex flex-col rounded-2xl p-5 hover:shadow-md transition-shadow">
-  <h2 class="font-tan text-lg md:text-xl mb-4 text-[#6E6A64] text-center">Hybrid Lashes</h2>
-  <div class="flex-grow flex items-center justify-center mb-4">
-    <img src="/images/Hybridedited.png" alt="Hybrid Lashes" class="w-full h-40 lg:h-48 rounded-xl object-cover shadow-sm">
-  </div>
-  <div class="mt-auto pt-4 border-t border-[#6E6A64]/10">
-    <div class="space-y-1 mb-4 text-[#6E6A64] text-sm">
-      <div class="flex justify-between"><span>Full Set</span> <span class="font-semibold">R650</span></div>
-      <div class="flex justify-between"><span>3 Week Fill</span> <span class="font-semibold">R550</span></div>
-      <div class="flex justify-between"><span>2 Week Fill</span> <span class="font-semibold">R500</span></div>
-    </div>
-    <div class="text-center">
-       <a href="https://www.fresha.com/a/lash-lunar-cape-town-14-central-square-axpqsp23/booking?pId=1222548&cartId=397b64dd-e3f1-4c1f-ba9d-db5ce9aa1f05" target="_blank" rel="noopener noreferrer">
-        <button class="text-xs uppercase tracking-widest text-[#6E6A64] border border-[#6E6A64] px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors">Book Now</button>
-      </a>
-    </div>
-  </div>
-</div>
+        <!-- Wet Look -->
+        <div class="bg-[#F0F0F0] w-full min-h-[450px] flex flex-col rounded-2xl p-5 hover:shadow-[0_4px_15px_rgba(22,78,65,0.4)] transition-shadow duration-500 ease-in-out">
+          <h2 class="font-tan text-lg md:text-xl mb-4 text-center text-[#6E6A64]">Wet Look Lashes</h2>
+          <div class="flex-grow flex items-center justify-center mb-4">
+            <img src="/images/Wetlook.jpeg" class="w-full h-48 lg:h-56 rounded-xl object-cover shadow-sm">
+          </div>
+          <div class="mt-auto pt-4 border-t border-[#6E6A64]/10">
+            <div class="space-y-1 mb-4 text-sm text-[#6E6A64]">
+              <div class="flex justify-between"><span>Full Set</span><span class="font-semibold">R550</span></div>
+              <div class="flex justify-between"><span>3 Week Fill</span><span class="font-semibold">R500</span></div>
+              <div class="flex justify-between"><span>2 Week Fill</span><span class="font-semibold">R450</span></div>
+            </div>
+            <div class="text-center">
+              <button class="text-xs uppercase tracking-widest text-[#6E6A64] border px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white">Book Now</button>
+            </div>
+          </div>
+        </div>
 
-<!-- Wet Look Lashes -->
-<div class="bg-[#F0F0F0] w-full min-h-[450px] flex flex-col rounded-2xl p-5 hover:shadow-md transition-shadow">
-  <h2 class="font-tan text-lg md:text-xl mb-4 text-[#6E6A64] text-center">Wet Look Lashes</h2>
-  <div class="flex-grow flex items-center justify-center mb-4">
-    <img src="/images/Wetlook.jpeg" alt="Wet Look Lashes" class="w-full h-40 lg:h-48 rounded-xl object-cover shadow-sm">
-  </div>
-  <div class="mt-auto pt-4 border-t border-[#6E6A64]/10">
-    <div class="space-y-1 mb-4 text-[#6E6A64] text-sm">
-      <div class="flex justify-between"><span>Full Set</span> <span class="font-semibold">R550</span></div>
-      <div class="flex justify-between"><span>3 Week Fill</span> <span class="font-semibold">R500</span></div>
-      <div class="flex justify-between"><span>2 Week Fill</span> <span class="font-semibold">R450</span></div>
-    </div>
-    <div class="text-center">
-       <a href="https://www.fresha.com/a/lash-lunar-cape-town-14-central-square-axpqsp23/booking?pId=1222548&cartId=397b64dd-e3f1-4c1f-ba9d-db5ce9aa1f05" target="_blank" rel="noopener noreferrer">
-        <button class="text-xs uppercase tracking-widest text-[#6E6A64] border border-[#6E6A64] px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors">Book Now</button>
-      </a>
-    </div>
-  </div>
-</div>
+        <!-- Russian -->
+        <div class="bg-[#F0F0F0] w-full min-h-[450px] flex flex-col rounded-2xl p-5 hover:shadow-[0_4px_15px_rgba(22,78,65,0.4)] transition-shadow duration-500 ease-in-out">
+          <h2 class="font-tan text-lg md:text-xl mb-4 text-center text-[#6E6A64]">Russian Volume Lashes</h2>
+          <div class="flex-grow flex items-center justify-center mb-4">
+            <img src="/images/RussianVolume2.jpeg" class="w-full h-48 lg:h-56 rounded-xl object-cover shadow-sm">
+          </div>
+          <div class="mt-auto pt-4 border-t border-[#6E6A64]/10">
+            <div class="space-y-1 mb-4 text-sm text-[#6E6A64]">
+              <div class="flex justify-between"><span>Full Set</span><span class="font-semibold">R900</span></div>
+              <div class="flex justify-between"><span>3 Week Fill</span><span class="font-semibold">R800</span></div>
+              <div class="flex justify-between"><span>2 Week Fill</span><span class="font-semibold">R700</span></div>
+            </div>
+            <div class="text-center">
+              <button class="text-xs uppercase tracking-widest text-[#6E6A64] border px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white">Book Now</button>
+            </div>
+          </div>
+        </div>
 
-<!-- Russian Lashes -->
-<div class="bg-[#F0F0F0] w-full min-h-[450px] flex flex-col rounded-2xl p-5 hover:shadow-md transition-shadow">
-  <h2 class="font-tan text-lg md:text-xl mb-4 text-[#6E6A64] text-center">Russian Volume Lashes</h2>
-  <div class="flex-grow flex items-center justify-center mb-4">
-    <img src="/images/RussianVolume2.jpeg" alt="Russian Lashes" class="w-full h-40 lg:h-48 rounded-xl object-cover shadow-sm">
-  </div>
-  <div class="mt-auto pt-4 border-t border-[#6E6A64]/10">
-    <div class="space-y-1 mb-4 text-[#6E6A64] text-sm">
-      <div class="flex justify-between"><span>Full Set</span> <span class="font-semibold">R900</span></div>
-      <div class="flex justify-between"><span>3 Week Fill</span> <span class="font-semibold">R800</span></div>
-      <div class="flex justify-between"><span>2 Week Fill</span> <span class="font-semibold">R700</span></div>
-    </div>
-    <div class="text-center">
-       <a href="https://www.fresha.com/a/lash-lunar-cape-town-14-central-square-axpqsp23/booking?pId=1222548&cartId=397b64dd-e3f1-4c1f-ba9d-db5ce9aa1f05" target="_blank" rel="noopener noreferrer">
-        <button class="text-xs uppercase tracking-widest text-[#6E6A64] border border-[#6E6A64] px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors">Book Now</button>
-      </a>
-    </div>
-  </div>
-</div>
+        <!-- Half Sets -->
+        <div class="bg-[#F0F0F0] w-full min-h-[450px] flex flex-col rounded-2xl p-5 hover:shadow-[0_4px_15px_rgba(22,78,65,0.4)] transition-shadow duration-500 ease-in-out">
+          <h2 class="font-tan text-lg md:text-xl mb-4 text-center text-[#6E6A64]">Half Sets</h2>
+          <div class="flex-grow flex items-center justify-center mb-4">
+            <img src="/images/Halfsets.jpeg" class="w-full h-48 lg:h-56 rounded-xl object-cover shadow-sm">
+          </div>
+          <div class="mt-auto pt-4 border-t border-[#6E6A64]/10">
+            <div class="space-y-1 mb-4 text-sm text-[#6E6A64]">
+              <div class="flex justify-between"><span>Classic</span><span class="font-semibold">R400</span></div>
+              <div class="flex justify-between"><span>Hybrid</span><span class="font-semibold">R500</span></div>
+              <div class="flex justify-between"><span>Volume</span><span class="font-semibold">R600</span></div>
+            </div>
+            <div class="text-center">
+              <button class="text-xs uppercase tracking-widest text-[#6E6A64] border px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white">Book Now</button>
+            </div>
+          </div>
+        </div>
 
-<!-- Half Sets -->
-<div class="bg-[#F0F0F0] w-full min-h-[450px] flex flex-col rounded-2xl p-5 hover:shadow-md transition-shadow">
-  <h2 class="font-tan text-lg md:text-xl mb-4 text-[#6E6A64] text-center">Half Sets</h2>
-  <div class="flex-grow flex items-center justify-center mb-4">
-    <img src="/images/RussianVolume2.jpeg" alt="Russian Lashes" class="w-full h-40 lg:h-48 rounded-xl object-cover shadow-sm">
-  </div>
-  <div class="mt-auto pt-4 border-t border-[#6E6A64]/10">
-    <div class="space-y-1 mb-4 text-[#6E6A64] text-sm">
-      <div class="flex justify-between"><span>Classic</span> <span class="font-semibold">R400</span></div>
-      <div class="flex justify-between"><span>Hybrid</span> <span class="font-semibold">R500</span></div>
-      <div class="flex justify-between"><span>Volume</span> <span class="font-semibold">R600</span></div>
-    </div>
-    <div class="text-center">
-       <a href="https://www.fresha.com/a/lash-lunar-cape-town-14-central-square-axpqsp23/booking?pId=1222548&cartId=397b64dd-e3f1-4c1f-ba9d-db5ce9aa1f05" target="_blank" rel="noopener noreferrer">
-        <button class="text-xs uppercase tracking-widest text-[#6E6A64] border border-[#6E6A64] px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors">Book Now</button>
-      </a>
-    </div>
-  </div>
-</div>
+            <!-- Customised-->
 
-<!-- Customised Lash Set -->
-<div class="bg-[#F0F0F0] w-full min-h-[450px] flex flex-col rounded-2xl p-5 hover:shadow-md transition-shadow">
+        <div class="bg-[#F0F0F0] w-full min-h-[450px] flex flex-col rounded-2xl p-5 hover:shadow-[0_4px_15px_rgba(22,78,65,0.4)] transition-shadow duration-500 ease-in-out">
   <h2 class="font-tan text-lg md:text-xl mb-4 text-[#6E6A64] text-center">Customised Lash Set</h2>
-  <div class="flex-grow flex items-center justify-center mb-4">
-    <img src="/images/RussianVolume2.jpeg" alt="Russian Lashes" class="w-full h-40 lg:h-48 rounded-xl object-cover shadow-sm">
-  </div>
-  <div class="mt-auto pt-4 border-t border-[#6E6A64]/10">
-    <div class="space-y-1 mb-4 text-[#6E6A64] text-sm">
+
+  <div class="flex-grow flex flex-col justify-between mb-4">
+    <img src="/images/Customisedset.jpeg" class="w-full h-48 lg:h-56 rounded-xl object-cover shadow-sm ">
+
+    <div class="space-y-1 mt-4 text-[#6E6A64] text-sm">
       <div class="flex justify-between"><span>Full Set</span> <span class="font-semibold">R600</span></div>
-     
-    </div>
-    <div class="text-center">
-       <a href="https://www.fresha.com/a/lash-lunar-cape-town-14-central-square-axpqsp23/booking?pId=1222548&cartId=397b64dd-e3f1-4c1f-ba9d-db5ce9aa1f05" target="_blank" rel="noopener noreferrer">
-        <button class="text-xs uppercase tracking-widest text-[#6E6A64] border border-[#6E6A64] px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors">Book Now</button>
-      </a>
     </div>
   </div>
-</div>
 
-          <!-- Lash Lifts -->
-<div class="bg-[#F0F0F0] w-full min-h-[400px] flex flex-col rounded-2xl p-5 hover:shadow-md transition-shadow">
-  <h2 class="font-tan text-lg md:text-xl mb-4 text-[#6E6A64] text-center">Lash Lifts</h2>
-  <div class="flex-grow flex items-center justify-center mb-4">
-    <img src="/images/Lashlift.jpeg" alt="Lash Lift" class="w-full h-48 lg:h-56 rounded-xl object-cover shadow-sm">
-  </div>
   <div class="mt-auto pt-4 border-t border-[#6E6A64]/10 text-center">
-    <div class="space-y-1 mb-4 text-[#6E6A64] text-sm">
-      <div class="flex justify-between"><span>Lash Lift</span> <span class="font-semibold">R 400.00</span></div>
-      <div class="flex justify-between"><span>Lash Lift + Tint</span> <span class="font-semibold">R 450.00</span></div>
-    </div>
-    <a href="https://www.fresha.com/a/lash-lunar-cape-town-14-central-square-axpqsp23/booking?pId=1222548&cartId=397b64dd-e3f1-4c1f-ba9d-db5ce9aa1f05" target="_blank" rel="noopener noreferrer">
-        <button class="text-xs uppercase tracking-widest text-[#6E6A64] border border-[#6E6A64] px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors">Book Now</button>
-      </a>
+    <button class="text-xs uppercase tracking-widest text-[#6E6A64] border border-[#6E6A64] px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors">
+      Book Now
+    </button>
   </div>
 </div>
 
-<!-- Brow Styling -->
-<div class="bg-[#F0F0F0] w-full min-h-[400px] flex flex-col rounded-2xl p-5 hover:shadow-md transition-shadow">
+        <!-- Lash Lift -->
+        <div class="bg-[#F0F0F0] w-full min-h-[450px] flex flex-col rounded-2xl p-5 hover:shadow-[0_4px_15px_rgba(22,78,65,0.4)] transition-shadow duration-500 ease-in-out">
+  <h2 class="font-tan text-lg md:text-xl mb-4 text-center text-[#6E6A64]">Lash Lifts</h2>
+
+  <div class="flex-grow flex flex-col justify-between mb-4">
+    
+    <img src="/images/Lashlift.jpeg" class="w-full h-48 lg:h-56 rounded-xl object-cover shadow-sm">
+
+    <div class="space-y-1 mt-4 text-sm text-[#6E6A64]">
+      <div class="flex justify-between"><span>Lash Lift</span><span class="font-semibold">R400</span></div>
+      <div class="flex justify-between"><span>Lash Lift + Tint</span><span class="font-semibold">R450</span></div>
+    </div>
+
+  </div>
+
+  <div class="mt-auto pt-4 border-t border-[#6E6A64]/10 text-center">
+    <button class="text-xs uppercase tracking-widest text-[#6E6A64] border px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white">
+      Book Now
+    </button>
+  </div>
+</div>
+ 
+          <!-- Brow Lamination-->
+
+        <div class="bg-[#F0F0F0] w-full min-h-[450px] flex flex-col rounded-2xl p-5 hover:shadow-[0_4px_15px_rgba(22,78,65,0.4)] transition-shadow duration-500 ease-in-out">
   <h2 class="font-tan text-lg md:text-xl mb-4 text-[#6E6A64] text-center">Brow Styling</h2>
-  <div class="flex-grow flex items-center justify-center mb-4">
-    <img src="/images/Browlamination.jpeg" alt="Brow Styling" class="w-full h-48 lg:h-56 rounded-xl object-cover shadow-sm">
-  </div>
-  <div class="mt-auto pt-4 border-t border-[#6E6A64]/10 text-center">
-    <div class="space-y-1 mb-4 text-[#6E6A64] text-sm text-left">
+
+  <div class="flex-grow flex flex-col justify-start mb-4">
+    <img src="/images/Browlamination.jpeg" class="w-full h-48 lg:h-56 rounded-xl object-cover shadow-sm mb-4">
+
+    <div class="space-y-1 text-[#6E6A64] text-sm">
       <div class="flex justify-between"><span>Lamination</span> <span class="font-semibold">R 250.00</span></div>
       <div class="flex justify-between"><span>Lamination + Tint</span> <span class="font-semibold">R 300.00</span></div>
       <div class="flex justify-between"><span>Brow Thread + Tint</span> <span class="font-semibold">R 170.00</span></div>
       <div class="flex justify-between"><span>Brow Tint</span> <span class="font-semibold">R 90.00</span></div>
     </div>
-     <a href="https://www.fresha.com/a/lash-lunar-cape-town-14-central-square-axpqsp23/booking?pId=1222548&cartId=397b64dd-e3f1-4c1f-ba9d-db5ce9aa1f05" target="_blank" rel="noopener noreferrer">
-        <button class="text-xs uppercase tracking-widest text-[#6E6A64] border border-[#6E6A64] px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors">Book Now</button>
-      </a>
+  </div>
+
+  <div class="mt-auto pt-4 border-t border-[#6E6A64]/10 text-center">
+    <button class="text-xs uppercase tracking-widest text-[#6E6A64] border border-[#6E6A64] px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors">
+      Book Now
+    </button>
   </div>
 </div>
+      
+       <!-- Threading-->
 
-<!-- Threading -->
-<div class="bg-[#F0F0F0] w-full min-h-[400px] flex flex-col rounded-2xl p-5 hover:shadow-md transition-shadow">
+       <div class="bg-[#F0F0F0] w-full min-h-[450px] flex flex-col rounded-2xl p-5 hover:shadow-[0_4px_15px_rgba(22,78,65,0.4)] transition-shadow duration-500 ease-in-out">
   <h2 class="font-tan text-lg md:text-xl mb-4 text-[#6E6A64] text-center">Threading</h2>
-  <div class="flex-grow flex items-center justify-center mb-4">
-    <img src="/images/Threadedbrow.png" alt="Threading" class="w-full h-48 lg:h-56 rounded-xl object-cover shadow-sm">
-  </div>
-  <div class="mt-auto pt-4 border-t border-[#6E6A64]/10 text-center">
-    <div class="space-y-1 mb-4 text-[#6E6A64] text-sm text-left">
+
+  <div class="flex-grow flex flex-col justify-start mb-4">
+    <img src="/images/Threadedbrow.png" class="w-full h-48 lg:h-56 rounded-xl object-cover shadow-sm mb-4">
+
+    <div class="space-y-1 text-[#6E6A64] text-sm">
       <div class="flex justify-between"><span>Brow Thread</span> <span class="font-semibold">R 80.00</span></div>
       <div class="flex justify-between"><span>Lip Thread</span> <span class="font-semibold">R 50.00</span></div>
       <div class="flex justify-between"><span>Brow + Lip</span> <span class="font-semibold">R 130.00</span></div>
       <div class="flex justify-between"><span>Full Face</span> <span class="font-semibold">R 200.00</span></div>
       <div class="flex justify-between"><span>Hands</span> <span class="font-semibold">R 60.00</span></div>
     </div>
-     <a href="https://www.fresha.com/a/lash-lunar-cape-town-14-central-square-axpqsp23/booking?pId=1222548&cartId=397b64dd-e3f1-4c1f-ba9d-db5ce9aa1f05" target="_blank" rel="noopener noreferrer">
-        <button class="text-xs uppercase tracking-widest text-[#6E6A64] border border-[#6E6A64] px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors">Book Now</button>
-      </a>
+  </div>
+
+  <div class="mt-auto pt-4 border-t border-[#6E6A64]/10 text-center">
+    <button class="text-xs uppercase tracking-widest text-[#6E6A64] border border-[#6E6A64] px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors">
+      Book Now
+    </button>
   </div>
 </div>
 
-<!-- Extras -->
-<div class="bg-[#F0F0F0] w-full min-h-[400px] flex flex-col rounded-2xl p-5 hover:shadow-md transition-shadow">
+    <!-- Extras -->
+<div class="bg-[#F0F0F0] w-full min-h-[450px] flex flex-col rounded-2xl p-5 hover:shadow-[0_4px_15px_rgba(22,78,65,0.4)] transition-shadow duration-500 ease-in-out">
   <h2 class="font-tan text-lg md:text-xl mb-4 text-[#6E6A64] text-center">Extras</h2>
-  <!-- Minimalist space for list since extras don't have a specific image -->
-  <div class="flex-grow flex items-center justify-center mb-4">
-     <div class="w-full h-full flex flex-col justify-center space-y-3 px-4">
-        <div class="flex justify-between text-[#6E6A64] border-b border-[#6E6A64]/10 pb-2">
-          <span class="text-sm">Patch Test</span> <span class="font-semibold">R 0.00</span>
-        </div>
-        <div class="flex justify-between text-[#6E6A64] border-b border-[#6E6A64]/10 pb-2">
-          <span class="text-sm">Lash Removal</span> <span class="font-semibold">R 150.00</span>
-        </div>
-        <div class="flex justify-between text-[#6E6A64] border-b border-[#6E6A64]/10 pb-2">
-          <span class="text-sm">Lash Bath</span> <span class="font-semibold">R 80.00</span>
-        </div>
-        
-     </div>
+
+  <div class="flex-grow flex flex-col justify-start mb-4">
+    <!-- Extras image -->
+    <div class="flex items-center justify-center mb-4">
+      <img src="/images/Extras.jpeg" class="w-full h-48 lg:h-56 rounded-xl object-cover shadow-sm">
+    </div>
+
+    <div class="space-y-2 text-[#6E6A64] text-sm">
+      <div class="flex justify-between"><span>Patch Test</span> <span class="font-semibold">R 0.00</span></div>
+      <div class="flex justify-between"><span>Lash Removal</span> <span class="font-semibold">R 150.00</span></div>
+      <div class="flex justify-between"><span>Lash Bath</span> <span class="font-semibold">R 80.00</span></div>
+    </div>
   </div>
+
   <div class="mt-auto pt-4 border-t border-[#6E6A64]/10 text-center">
-    <a href="https://www.fresha.com/a/lash-lunar-cape-town-14-central-square-axpqsp23/booking?pId=1222548&cartId=397b64dd-e3f1-4c1f-ba9d-db5ce9aa1f05" target="_blank" rel="noopener noreferrer">
-        <button class="text-xs uppercase tracking-widest text-[#6E6A64] border border-[#6E6A64] px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors">Book Now</button>
-      </a>
+    <button class="text-xs uppercase tracking-widest text-[#6E6A64] border border-[#6E6A64] px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors">
+      Book Now
+    </button>
   </div>
 </div>
+
+  </div>
+
+      </div>
+    </div>
+  </div>
 
 </section>
 
@@ -353,7 +364,7 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         
         <!-- 1. Appointment Policy -->
-        <div class="bg-[#F0F0F0] w-full min-h-[400px] flex flex-col rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+        <div class="bg-[#F0F0F0] w-full min-h-[400px] flex flex-col rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow hover:shadow-[0_4px_15px_rgba(22,78,65,0.4)] transition-shadow duration-500 ease-in-out">
 
       <div class="mb-4">
      <svg 
