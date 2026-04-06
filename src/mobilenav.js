@@ -1,10 +1,37 @@
+/**
+ * Initialises and manages the mobile navigation drawer.
+ * 
+ * This function handles opening and closing the mobile menu overlay by
+ * toggling Tailwind CSS display classes (flex/hidden) based on user interactions.
+ * It also ensures the menu closes automatically when a navigation link is clicked.
+ * 
+ * @function mobileNav
+ * @returns {void} Returns early if any required DOM elements are missing.
+ */
+
 export function mobileNav() {
+     /** @type {HTMLElement | null} The button/icon used to open the menu */
   const menuBtn = document.getElementById("nav-Btn");
+
+   /** @type {HTMLElement | null} The container/overlay for the mobile links */
   const navLinks = document.getElementById("mobile-menu");
+
+   /** @type {HTMLElement | null} The button inside the menu used to close it */
   const closeBtn = document.getElementById("close-menu");
+
+   /** @type {NodeListOf<HTMLAnchorElement>} All anchor links within the mobile menu */
   const allLinks = navLinks.querySelectorAll("a");
 
+  // Safety check: Exit if the necessary elements are not found in the DOM
   if (!menuBtn || !navLinks || !closeBtn) return; // safe check
+
+
+  
+  /**
+   * Toggles the visibility of the mobile menu and the menu icon.
+   * 
+   * @param {boolean} isOpen - Set to true to show the menu, false to hide it.
+   */
 
   const toggleMenu = (isOpen) => {
     if (isOpen) {
@@ -19,14 +46,14 @@ export function mobileNav() {
     }
 };
 
-  // Open on burger click
+   // Event listener to open the menu when the burger icon is clicked
   menuBtn.addEventListener("click", () => toggleMenu(true)); 
    
   
-  // Close Logic
+  // Event listener to close the menu when the 'X' button is clicked
   closeBtn.addEventListener("click", () => toggleMenu (false));  
    
-    // CLOSE WHEN A LINK IS CLICKED
+      // Loop through all links to ensure the menu closes after a selection is made
  allLinks.forEach(link => {
     link.addEventListener("click", () => toggleMenu(false));
   });
