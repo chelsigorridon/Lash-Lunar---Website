@@ -10,7 +10,7 @@ export function initServicesDropdown() {
     services.classList.toggle("hidden");      // show/hide the container
     arrow.classList.toggle("rotate-180");     // rotates the arrow
   });
-}
+
 
 // Booking toggle
   const toggleBooking = document.getElementById("toggle-booking");
@@ -22,7 +22,6 @@ export function initServicesDropdown() {
     arrowBooking.classList.toggle("rotate-180");
   });
 
-  export function initGiftDropdown() {
   const toggleGift = document.getElementById("toggle-gift");
   const giftContainer = document.getElementById("gift-container");
   const arrowGift = document.getElementById("arrow-gift");
@@ -31,6 +30,7 @@ export function initServicesDropdown() {
  
   toggleGift.addEventListener("click", () => {
     giftContainer.classList.toggle("hidden");
-    arrowGift.classList.toggle("rotate-90");
+    arrowGift.classList.toggle("rotate-180");
   });
+
 }
