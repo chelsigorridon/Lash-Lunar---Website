@@ -11,13 +11,9 @@
 <main>
 
   <!--  
-       Headings in booking policy are not lined up 
        
-       Pre and Post aftercare buttons need to be added
-       
-       Refine gift voucher sections
-        
-       Footer needs refinement 
+       Reviews sections to be done 
+       Mobile Nav to be refined (currently just a basic overlay with the same links as desktop, but needs styling and animation) 
        Mobile version needs refinement -->
 
     <!-- NAV -->
@@ -44,18 +40,26 @@
     </button>
 
      <!-- MOBILE MENU OVERLAY (The "Separate Section") -->
-  <div id="mobile-menu" class="hidden fixed inset-0 bg-[#F4F4F4] flex-col items-center justify-center z-50 md:hidden">
+  <div id="mobile-menu" class="hidden fixed  top-0 w-64 h-full bg-[#F4F4F4] flex-col items-center justify-center z-50 md:hidden">
       <!-- Close Button -->
       <button id="close-menu" class="absolute top-5 right-6 text-[#6E6A64] text-3xl">&times;</button>
       
       <ul class="flex flex-col gap-8 text-[#6E6A64] text-center">
-          <li><a href="#home" class="text-sm uppercase tracking-widest">Home</a></li>
-          <li><a href="#about" class="text-sm uppercase tracking-widest">About</a></li>
-          <!-- Add other links here -->
+      <li><a href="#home"          class="text-xs uppercase tracking-widest px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors">Home</a></li>
+      <li><a href="#about"         class="text-xs uppercase tracking-widest px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors">About</a></li>
+      <li><a href="#services"      class="text-xs uppercase tracking-widest px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors">Services</a></li>
+      <li><a href="#policies"      class="text-xs uppercase tracking-widest px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors">Policies</a></li>
+      <li><a href="#gift-vouchers" class="text-xs uppercase tracking-widest px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors">Gift Vouchers</a></li>
+     <li>
+     <a href="/images/Preapp.pdf" 
+     download="Pre-and-Post-Care-Guide"
+     class="text-xs uppercase tracking-widest px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors">
+     Pre & Post Care
+    </a>
+    </li>
       </ul>
   </div>
 
-   
     <div id="nav-Btn" class="flex justify-end items-center" >
     <img src="/images/Menu.svg" alt="Menu" class="w-8 h-8 md:hidden ml-4">
     </div>
@@ -69,7 +73,7 @@
   <img src="./images/logo.jpeg" alt="Lash Lunar Logo" class="w-full max-w-[250px] sm:max-w-md md:max-w-2xl h-auto p-4 flex-shrink">
 
   <!-- Main Collage Container - Now visible on mobile with responsive widths -->
-  <div class="relative w-24 sm:w-48 md:w-80 aspect-[3/4] flex-shrink-0 mx-auto md:mx-0 md:mt-[-60px] z-10">
+  <div class="relative w-32 sm:w-48 md:w-80 aspect-[3/4] flex-shrink-0 mx-auto md:mx-0 md:mt-[-60px] z-10">
 
     <!-- Background Image (Blurred) -->
     <div class="absolute inset-0 overflow-hidden border border-[#F0F0F0]/20 grayscale contrast-125 brightness-75 left-[15%] right-[-15%] md:left-[25%] md:right-[-30%]">
@@ -105,7 +109,7 @@
     </div>
 
     <!-- Images Container -->
-<div class="relative w-full max-w-[400px] aspect-[4/5] mx-auto md:mx-0 lg:max-w-[400px]">
+<div class="relative w-full max-w-[280px] sm:max-w-[340px] lg:max-w-[400px] aspect-[4/5] mx-auto md:mx-0 lg:max-w-[400px]">
 
   <!-- Foreground (About Huda) -->
   <div class="absolute inset-0 w-full h-full
@@ -142,7 +146,7 @@
 <section id="services" class="w-full py-16 px-6 mx-auto lg:px-20 max-w-screen-2xl">
   <div class="relative">
 
-    <button id="toggle-services" class="group h1 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-tan text-[#F0F0F0] tracking-wide flex items-center gap-2 hover:cursor-pointer ">
+    <button id="toggle-services" class="group h1 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-tan text-[#F0F0F0] tracking-wide flex items-center gap-2 hover:cursor-pointer  ">
       Services &amp; Prices
       <span id="arrow" class="transform transition-transform duration-300 group-hover:translate-x-2">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 stroke-current" fill="none" viewBox="0 0 24 24" stroke-width="2">
@@ -155,7 +159,7 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
 
             <!-- Classic -->
-    <div class="bg-[#F0F0F0] w-full min-h-[450px] flex flex-col rounded-4xl p-5 hover:shadow-[0_4px_15px_rgba(22,78,65,0.4)] transition-shadow duration-600 ease-in-out border border-white/90 ">
+    <div class="bg-[#F0F0F0] w-full min-h-[320px] sm:min-h-[360px] flex flex-col rounded-4xl p-5 hover:shadow-[0_4px_15px_rgba(22,78,65,0.4)] transition-shadow duration-600 ease-in-out border border-white/90 ">
       <h2 class="font-tan text-lg md:text-xl mb-4 text-[#6E6A64] text-center">Classic Lashes</h2>
       <div class="w-full h-48 lg:h-56 mb-4">
         <img src="/images/classicedited.png" class="w-full h-full rounded-4xl object-cover shadow-sm">
@@ -175,7 +179,7 @@
     </div>
 
     <!-- Volume -->
-    <div class="bg-[#F0F0F0] w-full min-h-[450px] flex flex-col rounded-4xl p-5 hover:shadow-[0_4px_15px_rgba(22,78,65,0.4)] transition-shadow duration-600 ease-in-out border border-white/90">
+    <div class="bg-[#F0F0F0] w-full min-h-[320px] sm:min-h-[360px] flex flex-col rounded-4xl p-5 hover:shadow-[0_4px_15px_rgba(22,78,65,0.4)] transition-shadow duration-600 ease-in-out border border-white/90">
       <h2 class="font-tan text-lg md:text-xl mb-4 text-center text-[#6E6A64]">Volume Lashes</h2>
       <div class="w-full h-48 lg:h-56 mb-4">
         <img src="/images/Volume.jpeg" class="w-full h-full rounded-4xl object-cover shadow-sm">
@@ -195,7 +199,7 @@
     </div>
 
     <!-- Hybrid -->
-    <div class="bg-[#F0F0F0] w-full min-h-[450px] flex flex-col rounded-4xl p-5 hover:shadow-[0_4px_15px_rgba(22,78,65,0.4)] transition-shadow duration-600 ease-in-out border border-white/90">
+    <div class="bg-[#F0F0F0] w-full min-h-[320px] sm:min-h-[360px] flex flex-col rounded-4xl p-5 hover:shadow-[0_4px_15px_rgba(22,78,65,0.4)] transition-shadow duration-600 ease-in-out border border-white/90">
       <h2 class="font-tan text-lg md:text-xl mb-4 text-center text-[#6E6A64]">Hybrid Lashes</h2>
       <div class="w-full h-48 lg:h-56 mb-4">
         <img src="/images/Hybridedited.png" class="w-full h-full rounded-4xl object-cover shadow-sm">
@@ -215,7 +219,7 @@
     </div>
 
     <!-- Wet Look -->
-    <div class="bg-[#F0F0F0] w-full min-h-[450px] flex flex-col rounded-4xl p-5 hover:shadow-[0_4px_15px_rgba(22,78,65,0.4)] transition-shadow duration-600 ease-in-out border border-white/90">
+    <div class="bg-[#F0F0F0] w-full min-h-[320px] sm:min-h-[360px] flex flex-col rounded-4xl p-5 hover:shadow-[0_4px_15px_rgba(22,78,65,0.4)] transition-shadow duration-600 ease-in-out border border-white/90">
       <h2 class="font-tan text-lg md:text-xl mb-4 text-center text-[#6E6A64]">Wet Look Lashes</h2>
       <div class="w-full h-48 lg:h-56 mb-4">
         <img src="/images/Wetlook.jpeg" class="w-full h-full rounded-4xl object-cover shadow-sm">
@@ -235,7 +239,7 @@
     </div>
 
         <!-- Russian -->
-    <div class="bg-[#F0F0F0] w-full min-h-[450px] flex flex-col rounded-4xl p-5 hover:shadow-[0_4px_15px_rgba(22,78,65,0.4)] transition-shadow duration-600 ease-in-out border border-white/90">
+    <div class="bg-[#F0F0F0] w-full min-h-[320px] sm:min-h-[360px] flex flex-col rounded-4xl p-5 hover:shadow-[0_4px_15px_rgba(22,78,65,0.4)] transition-shadow duration-600 ease-in-out border border-white/90">
       <h2 class="font-tan text-lg md:text-xl mb-4 text-center text-[#6E6A64]">Russian Volume Lashes</h2>
 
       <div class="w-full h-48 lg:h-56 mb-4">
@@ -258,7 +262,7 @@
     </div>
 
     <!-- Half Sets -->
-    <div class="bg-[#F0F0F0] w-full min-h-[450px] flex flex-col rounded-4xl p-5 hover:shadow-[0_4px_15px_rgba(22,78,65,0.4)] transition-shadow duration-600 ease-in-out border border-white/90">
+    <div class="bg-[#F0F0F0] w-full min-h-[320px] sm:min-h-[360px] flex flex-col rounded-4xl p-5 hover:shadow-[0_4px_15px_rgba(22,78,65,0.4)] transition-shadow duration-600 ease-in-out border border-white/90">
       <h2 class="font-tan text-lg md:text-xl mb-4 text-center text-[#6E6A64]">Half Sets</h2>
 
       <div class="w-full h-48 lg:h-56 mb-4">
@@ -281,7 +285,7 @@
     </div>
 
     <!-- Customised -->
-    <div class="bg-[#F0F0F0] w-full min-h-[450px] flex flex-col rounded-4xl p-5 hover:shadow-[0_4px_15px_rgba(22,78,65,0.4)] transition-shadow duration-600 ease-in-out border border-white/90">
+    <div class="bg-[#F0F0F0] w-full min-h-[320px] sm:min-h-[360px] flex flex-col rounded-4xl p-5 hover:shadow-[0_4px_15px_rgba(22,78,65,0.4)] transition-shadow duration-600 ease-in-out border border-white/90">
       <h2 class="font-tan text-lg md:text-xl mb-4 text-[#6E6A64] text-center">Customised Lash Set</h2>
 
       <div class="w-full h-48 lg:h-56 mb-4">
@@ -302,7 +306,7 @@
     </div>
 
     <!-- Lash Lift -->
-    <div class="bg-[#F0F0F0] w-full min-h-[450px] flex flex-col rounded-4xl p-5 hover:shadow-[0_4px_15px_rgba(22,78,65,0.4)] transition-shadow duration-600 ease-in-out border border-white/90">
+    <div class="bg-[#F0F0F0] w-full min-h-[320px] sm:min-h-[360px] flex flex-col rounded-4xl p-5 hover:shadow-[0_4px_15px_rgba(22,78,65,0.4)] transition-shadow duration-600 ease-in-out border border-white/90">
       <h2 class="font-tan text-lg md:text-xl mb-4 text-center text-[#6E6A64]">Lash Lifts</h2>
 
       <div class="w-full h-48 lg:h-56 mb-4">
@@ -324,7 +328,7 @@
     </div>
 
     <!-- Brow Styling -->
-    <div class="bg-[#F0F0F0] w-full min-h-[450px] flex flex-col rounded-4xl p-5 hover:shadow-[0_4px_15px_rgba(22,78,65,0.4)] transition-shadow duration-600 ease-in-out border border-white/90">
+    <div class="bg-[#F0F0F0] w-full min-h-[320px] sm:min-h-[360px] flex flex-col rounded-4xl p-5 hover:shadow-[0_4px_15px_rgba(22,78,65,0.4)] transition-shadow duration-600 ease-in-out border border-white/90">
       <h2 class="font-tan text-lg md:text-xl mb-4 text-[#6E6A64] text-center">Brow Styling</h2>
 
       <div class="w-full h-48 lg:h-56 mb-4">
@@ -348,7 +352,7 @@
     </div>
 
     <!-- Threading -->
-    <div class="bg-[#F0F0F0] w-full min-h-[450px] flex flex-col rounded-4xl p-5 hover:shadow-[0_4px_15px_rgba(22,78,65,0.4)] transition-shadow duration-600 ease-in-out border border-white/90">
+    <div class="bg-[#F0F0F0] w-full min-h-[320px] sm:min-h-[360px] flex flex-col rounded-4xl p-5 hover:shadow-[0_4px_15px_rgba(22,78,65,0.4)] transition-shadow duration-600 ease-in-out border border-white/90">
       <h2 class="font-tan text-lg md:text-xl mb-4 text-[#6E6A64] text-center">Threading</h2>
 
       <div class="w-full h-48 lg:h-56 mb-4">
@@ -373,7 +377,7 @@
     </div>
 
     <!-- Extras -->
-    <div class="bg-[#F0F0F0] w-full min-h-[450px] flex flex-col rounded-4xl p-5 hover:shadow-[0_4px_15px_rgba(22,78,65,0.4)] transition-shadow duration-600 ease-in-out border border-white/90">
+    <div class="bg-[#F0F0F0] w-full min-h-[320px] sm:min-h-[360px] flex flex-col rounded-4xl p-5 hover:shadow-[0_4px_15px_rgba(22,78,65,0.4)] transition-shadow duration-600 ease-in-out border border-white/90">
       <h2 class="font-tan text-lg md:text-xl mb-4 text-[#6E6A64] text-center">Extras</h2>
 
       <div class="w-full h-48 lg:h-56 mb-4">
@@ -413,7 +417,7 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         
         <!-- 1. Appointment Policy -->
-        <div class="bg-[#F0F0F0] border border-white/90 w-full min-h-[400px] flex flex-col rounded-4xl p-6 shadow-sm hover:shadow-md hover:shadow-[0_4px_15px_rgba(22,78,65,0.4)] transition-shadow duration-600 ease-in-out ">
+        <div class="bg-[#F0F0F0] border border-white/90 w-full min-h-[320px] sm:min-h-[360px] flex flex-col rounded-4xl p-6 shadow-sm hover:shadow-md hover:shadow-[0_4px_15px_rgba(22,78,65,0.4)] transition-shadow duration-600 ease-in-out ">
 
       <div class="mb-4">
      <svg 
@@ -473,7 +477,7 @@
         </div>
 
         <!-- 2. Payments Policy -->
-       <div class="bg-[#F0F0F0] border border-white/90 w-full min-h-[400px] flex flex-col rounded-4xl p-6 shadow-sm hover:shadow-md hover:shadow-[0_4px_15px_rgba(22,78,65,0.4)] transition-shadow duration-600 ease-in-out ">
+       <div class="bg-[#F0F0F0] border border-white/90 w-full min-h-[320px] sm:min-h-[360px] flex flex-col rounded-4xl p-6 shadow-sm hover:shadow-md hover:shadow-[0_4px_15px_rgba(22,78,65,0.4)] transition-shadow duration-600 ease-in-out ">
 
     <div class="mb-4">
      <svg 
@@ -500,7 +504,7 @@
         </div>
 
         <!-- 3. Cancellations -->
-        <div class="bg-[#F0F0F0] border border-white/90 w-full min-h-[400px] flex flex-col rounded-4xl p-6 shadow-sm hover:shadow-md hover:shadow-[0_4px_15px_rgba(22,78,65,0.4)] transition-shadow duration-600 ease-in-out ">
+        <div class="bg-[#F0F0F0] border border-white/90 w-full min-h-[320px] sm:min-h-[360px] flex flex-col rounded-4xl p-6 shadow-sm hover:shadow-md hover:shadow-[0_4px_15px_rgba(22,78,65,0.4)] transition-shadow duration-600 ease-in-out ">
 
          <div class="mb-4">
          <svg 
@@ -525,7 +529,7 @@
         
 
         <!-- 4. Late Arrival -->
-        <div class="bg-[#F0F0F0] border border-white/90 w-full min-h-[400px] flex flex-col rounded-4xl p-6 shadow-sm hover:shadow-md hover:shadow-[0_4px_15px_rgba(22,78,65,0.4)] transition-shadow duration-600 ease-in-out ">
+        <div class="bg-[#F0F0F0] border border-white/90 w-full min-h-[320px] sm:min-h-[360px] flex flex-col rounded-4xl p-6 shadow-sm hover:shadow-md hover:shadow-[0_4px_15px_rgba(22,78,65,0.4)] transition-shadow duration-600 ease-in-out ">
 
           <div class="mb-4">
          <svg 
@@ -577,12 +581,12 @@
       <div id="gift-container" class="py-10 hidden">
         <div class="py-10">
       <div class="grid justify-center items-center grid-cols-1  sm:grid-cols-1 lg:grid-cols-1 gap-6 ">
-         <div class="bg-[#F0F0F0] border border-white/90 max-w-sm h-auto flex flex-col rounded-[2rem] p-8 shadow-xl rounded-4xl p-6 shadow-sm hover:shadow-[0_4px_15px_rgba(22,78,65,0.25)] transition-all duration-500 ease-in-out">
-
-           <div class="w-1/2 h-30 lg:h-30 mb-4 mx-auto p-4">
+         <div class="bg-[#F0F0F0] border border-white/90 max-w-xs sm:max-w-sm w-full flex flex-col rounded-4xl p-5  flex flex-col rounded-[2rem] p-8 shadow-xl rounded-4xl p-6 shadow-sm hover:shadow-[0_4px_15px_rgba(22,78,65,0.25)] transition-all duration-500 ease-in-out">
+         <h2 class="text-center font-tan text-xl  text-[#6E6A64] mb-5 ">Gift Vouchers</h2>
+           <div class="w-full h-40 mb-4">
           <img src="/images/giftcard.jpeg" class="w-full h-full rounded-xl object-cover shadow-sm">
          </div>
-          <h2 class="text-center font-tan text-xl  text-[#6E6A64]">Gift Vouchers</h2>
+          
           <p class="text-sm leading-relaxed text-[#4A4A4A] flex-grow mx-auto p-4 text-center">
             Treat someone special with a lash or brow service! Send us a message to request a gift voucher and payment details.
             <br><br>
@@ -612,123 +616,153 @@
     </div>
   </section>
 
- <!-- CONTACT -->
-<section id="contact" class="w-full py-16 px-6 mx-auto lg:px-20 max-w-screen-2xl">
+<!-- CONTACT -->
+<section id="contact" class="w-full py-16 px-4 sm:px-6 lg:px-20 mx-auto max-w-screen-2xl">
   <div class="relative">
-    <h1 class="h1 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-tan text-[#F0F0F0] tracking-wide">
+
+    <h1 class="h1 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-tan text-[#F0F0F0] tracking-wide mb-10">
       Contact
     </h1>
 
-    <div class="py-10">
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 hover:cursor-pointer">
+    <div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
 
         <!-- Email Card -->
-        <div class=" border border-white/90 max-w-sm h-auto flex flex-col items-center justify-center rounded-4xl p-6 shadow-[0_4px_15px_rgba(22,78,65,0.25)] transition-all duration-600 ease-in-out">
-          <div class="flex justify-center items-center h-14 mb-2">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-[#F4F4F4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+        <div class="border border-white/90 w-full max-w-xs mx-auto flex flex-col items-center text-center rounded-4xl p-5 
+                    shadow-[0_4px_15px_rgba(22,78,65,0.25)] transition-all duration-500 ease-in-out">
+          
+          <div class="flex justify-center items-center h-12 mb-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-9 h-9 text-[#F4F4F4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
               <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25H4.5a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5H4.5a2.25 2.25 0 00-2.25 2.25m19.5 0l-9.75 6.75L2.25 6.75" />
             </svg>
           </div>
-          <h2 class="text-center font-tan text-xl text-[#F4F4F4] mb-3">Email</h2>
-          <p class="text-sm leading-relaxed text-[#F4F4F4] flex-grow text-center px-2">
-            Reach out via email for any questions, enquiries, or to book your next appointment. 
+
+          <h2 class="font-tan text-lg text-[#F4F4F4] mb-2">Email</h2>
+
+          <p class="text-sm leading-relaxed text-[#F4F4F4] flex-grow px-2">
+            Reach out via email for any questions, enquiries, or to book your next appointment.
             <br><br>
             <strong>lashlunarr@gmail.com</strong>
           </p>
-          <div class="mt-6 text-center">
+
+          <div class="mt-5">
             <a href="mailto:lashlunarr@gmail.com">
-              <button class="text-xs uppercase tracking-widest text-[#F4F4F4] border border-[#F4F4F4] px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors hover:cursor-pointer">Email Me</button>
+              <button class="text-xs uppercase tracking-widest text-[#F4F4F4] border border-[#F4F4F4] px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors">
+                Email Me
+              </button>
             </a>
           </div>
         </div>
 
         <!-- WhatsApp Card -->
-        <div class=" border border-white/90 max-w-sm h-auto flex flex-col items-center justify-center rounded-4xl p-6 shadow-[0_4px_15px_rgba(22,78,65,0.25)] transition-all duration-600 ease-in-out">
-          <div class="flex justify-center items-center h-14 mb-2">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-[#F4F4F4]" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        <div class="border border-white/90 w-full max-w-xs mx-auto flex flex-col items-center text-center rounded-4xl p-5 
+                    shadow-[0_4px_15px_rgba(22,78,65,0.25)] transition-all duration-500 ease-in-out">
+          
+          <div class="flex justify-center items-center h-12 mb-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-[#F4F4F4]" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/>
             </svg>
           </div>
-          <h2 class="text-center font-tan text-xl text-[#F4F4F4] mb-3">WhatsApp</h2>
-          <p class="text-sm leading-relaxed text-[#F4F4F4] flex-grow text-center px-2">
+
+          <h2 class="font-tan text-lg text-[#F4F4F4] mb-2">WhatsApp</h2>
+
+          <p class="text-sm leading-relaxed text-[#F4F4F4] flex-grow px-2">
             Chat with me on WhatsApp for bookings, queries, or payments.
             <br><br>
             <strong>063 187 9603</strong>
           </p>
-          <div class="mt-6 text-center">
-            <a href="https://wa.me/0631879603" target="_blank" rel="noopener noreferrer">
-              <button class="text-xs uppercase tracking-widest text-[#F4F4F4] border border-[#F4F4F4] px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors hover:cursor-pointer">WhatsApp Me</button>
+
+          <div class="mt-5">
+            <a href="https://wa.me/27631879603" target="_blank" rel="noopener noreferrer">
+              <button class="text-xs uppercase tracking-widest text-[#F4F4F4] border border-[#F4F4F4] px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors">
+                WhatsApp Me
+              </button>
             </a>
           </div>
         </div>
 
         <!-- Instagram Card -->
-        <div class=" border border-white/90 max-w-sm h-auto flex flex-col items-center justify-center rounded-4xl p-6 shadow-[0_4px_15px_rgba(22,78,65,0.25)] transition-all duration-600 ease-in-out">
-          <div class="flex justify-center items-center h-14 mb-2">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-[#F4F4F4]" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+        
+        <div class="border border-white/90 w-full max-w-xs mx-auto flex flex-col items-center text-center rounded-4xl p-5 
+                    shadow-[0_4px_15px_rgba(22,78,65,0.25)] transition-all duration-500 ease-in-out">
+          
+          <div class="flex justify-center items-center h-12 mb-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-9 h-9 text-[#F4F4F4]" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M7.75 2C4.574 2 2 4.574 2 7.75v8.5C2 19.426 4.574 22 7.75 22h8.5C19.426 22 22 19.426 22 16.25v-8.5C22 4.574 19.426 2 16.25 2h-8.5zM12 7.25A4.75 4.75 0 1112 16.75 4.75 4.75 0 0112 7.25zm0 1.5A3.25 3.25 0 1012 15.25 3.25 3.25 0 0012 8.75zm5.25-1.88a1.13 1.13 0 110 2.26 1.13 1.13 0 010-2.26z"/>
             </svg>
           </div>
-          <h2 class="text-center font-tan text-xl text-[#F4F4F4] mb-3">Instagram</h2>
-          <p class="text-sm leading-relaxed text-[#F4F4F4] flex-grow text-center px-2">
+
+          <h2 class="font-tan text-lg text-[#F4F4F4] mb-2">Instagram</h2>
+
+          <p class="text-sm leading-relaxed text-[#F4F4F4] flex-grow px-2">
             Follow along for inspiration, behind-the-scenes, and the latest lash looks.
             <br><br>
             <strong>@lashlunar_</strong>
           </p>
-          <div class="mt-6 text-center">
-            <a href="https://www.instagram.com/lashlunar_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
-              <button class="text-xs uppercase tracking-widest text-[#F4F4F4] border border-[#F4F4F4] px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors hover:cursor-pointer">Follow Me</button>
+
+          <div class="mt-5">
+            <a href="https://www.instagram.com/lashlunar_/" target="_blank" rel="noopener noreferrer">
+              <button class="text-xs uppercase tracking-widest text-[#F4F4F4] border border-[#F4F4F4] px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors">
+                Follow Me
+              
+              </button>
             </a>
           </div>
         </div>
 
       </div>
     </div>
+
   </div>
 </section>
 
   <!-- FOOTER -->
-  <footer class="bg-[#F4F4F4] py-12 px-6 lg:px-20 text-[#6E6A64] shadow-[inset_0_15px_30px_-15px_rgba(22,78,65,0.15)]">
-   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-16">
+ <footer class="bg-[#F4F4F4] py-12 px-6 lg:px-20 text-[#6E6A64] shadow-[inset_0_15px_30px_-15px_rgba(22,78,65,0.15)]">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-30">
 
-     <div>
-        <h3 class="font-tan text-lg md:text-xl mb-3 font-semibold">Opening Hours</h3>
-        <p class="text-sm md:text-base leading-relaxed">
-          <span class="block">Monday &amp; Sunday: Closed</span>
-          <span class="block">Tuesday &amp; Wednesday: 10:00 am – 6:00 pm</span>
-          <span class="block">Thursday: 8:30 am – 4:30 pm</span>
-          <span class="block">Friday: 8:30 am – 3:30 pm</span>
-          <span class="block">Saturday: 9:00 am – 1:30 pm</span>
-        </p>
+      <!-- Hours -->
+      <div>
+        <h3 class="font-tan text-lg md:text-xl mb-4 font-semibold uppercase tracking-wider">Opening Hours</h3>
+        <ul class="text-sm md:text-base space-y-2">
+          <li class="flex justify-between border-b border-[#6E6A64]/10 pb-1"><span>Mon & Sun</span> <span class="font-medium text-red-800/60">Closed</span></li>
+          <li class="flex justify-between border-b border-[#6E6A64]/10 pb-1"><span>Tue & Wed</span> <span>10:00 am – 6:00 pm</span></li>
+          <li class="flex justify-between border-b border-[#6E6A64]/10 pb-1"><span>Thursday</span> <span>8:30 am – 4:30 pm</span></li>
+          <li class="flex justify-between border-b border-[#6E6A64]/10 pb-1"><span>Friday</span> <span>8:30 am – 3:30 pm</span></li>
+          <li class="flex justify-between"><span>Saturday</span> <span>9:00 am – 1:30 pm</span></li>
+        </ul>
       </div>
 
-
+      <!-- Address -->
       <div>
-        <h3 class="font-tan text-lg md:text-xl mb-3 font-semibold">Address</h3>
-        <p class="text-sm md:text-base leading-relaxed">
+        <h3 class="font-tan text-lg md:text-xl mb-4 font-semibold uppercase tracking-wider">Visit Us</h3>
+        <p class="text-sm md:text-base leading-relaxed ">
           14 Central Square<br>
           Pinelands, Cape Town<br>
           Western Cape
         </p>
       </div>
 
-      <div>
-        <h3 class="font-tan text-lg md:text-xl mb-3 font-semibold">Email</h3>
-        <p class="text-sm md:text-base">
-          <a href="mailto:lashlunarr@gmail.com" class="hover:underline">lashlunarr@gmail.com</a>
-        </p>
+      <!-- Contact -->
+      <div class="space-y-8">
+        <div>
+          <h3 class="font-tan text-lg md:text-xl mb-3 font-semibold uppercase tracking-wider">Email</h3>
+          <a href="mailto:lashlunarr@gmail.com" class="text-sm md:text-base hover:text-black transition-colors underline underline-offset-4">lashlunarr@gmail.com</a>
+        </div>
+        <div>
+          <h3 class="font-tan text-lg md:text-xl mb-3 font-semibold uppercase tracking-wider">WhatsApp</h3>
+          <a href="https://wa.me" target="_blank" class="text-sm md:text-base hover:text-black transition-colors font-medium">063 187 9603</a>
+        </div>
       </div>
-
-      <div>
-        <h3 class="font-tan text-lg md:text-xl mb-3 font-semibold">WhatsApp</h3>
-        <p class="text-sm md:text-base">
-          <a href="https://wa.me/0631879603" target="_blank" class="hover:underline">063 187 9603</a>
-        </p>
-      </div>
-
 
     </div>
-  </footer>
+
+    <!-- Optional Bottom Bar -->
+    <div class="mt-16 pt-8 border-t border-[#6E6A64]/20 text-center text-xs uppercase tracking-widest opacity-60">
+      &copy; 2024 Lash Lunar. All Rights Reserved.
+    </div>
+  </div>
+</footer>
 
 </main>
 <script src="./src/script.js" type="module"></script>
