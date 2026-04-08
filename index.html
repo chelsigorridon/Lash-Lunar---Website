@@ -10,8 +10,9 @@
 <body class="bg-[#95A387] text-[#F4F4F4]">
 <main>
 
-  <!--  
-       Add smooth scroll to website 
+  <!--  Gift vouchers look too big make smaller 
+       Spacing between H1 on mobile mode 
+       Mobile Nav Menu to be moved to the left & clean up navbar styling  
        Reviews sections to be done 
        Mobile Nav to be refined (currently just a basic overlay with the same links as desktop, but needs styling and animation) 
        Mobile version needs refinement -->
@@ -26,6 +27,7 @@
       <li><a href="#services"      class="text-xs uppercase tracking-widest px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors">Services</a></li>
       <li><a href="#policies"      class="text-xs uppercase tracking-widest px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors">Policies</a></li>
       <li><a href="#gift-vouchers" class="text-xs uppercase tracking-widest px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors">Gift Vouchers</a></li>
+      <li><a href="#reviews"       class="text-xs uppercase tracking-widest px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors">Reviews</a></li>
      <li>
      <a href="/images/Preapp.pdf" 
      download="Pre-and-Post-Care-Guide"
@@ -41,7 +43,7 @@
 </a>
 
      <!-- MOBILE MENU OVERLAY (The "Separate Section") -->
-  <div id="mobile-menu" class="hidden fixed  top-0 w-64 h-full bg-[#F4F4F4] flex-col items-center justify-center z-50 md:hidden">
+  <div id="mobile-menu" class="hidden fixed left-0 top-0 w-64 h-3/4  bg-[#F4F4F4] flex-col items-center justify-center z-50 md:hidden  border border-white/90 shadow-lg p-4 m-5 rounded-4xl ">
       <!-- Close Button -->
       <button id="close-menu" class="absolute top-5 right-6 text-[#6E6A64] text-3xl">&times;</button>
       
@@ -51,7 +53,7 @@
       <li><a href="#services"      class="text-xs uppercase tracking-widest px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors">Services</a></li>
       <li><a href="#policies"      class="text-xs uppercase tracking-widest px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors">Policies</a></li>
       <li><a href="#gift-vouchers" class="text-xs uppercase tracking-widest px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors">Gift Vouchers</a></li>
-          <li><a href="#reviews"   class="text-xs uppercase tracking-widest px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors">Reviews</a></li>
+      <li><a href="#reviews"   class="text-xs uppercase tracking-widest px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors">Reviews</a></li>
       <li><a href="#contact"       class="text-xs uppercase tracking-widest px-4 py-2 rounded-full hover:bg-[#6E6A64] hover:text-white transition-colors">Contact</a></li>
      <li>
      <a href="/images/Preapp.pdf" 
@@ -472,7 +474,7 @@
      </div>
 
           <h2 class=" text-center font-tan text-xl mb-4 text-[#6E6A64]">Appointment Policy</h2>
-          <p class="text-sm leading-relaxed text-[#4A4A4A] flex-grow">
+          <p class="text-sm leading-relaxed text-[#6E6A64] flex-grow">
             All appointments are booked online through our scheduling system, <strong>Fresha</strong>. Once confirmed, you will receive a confirmation email and a reminder 24 hours prior.
             <br><br>
             Alternatively, feel free to message on <a href="#" class="underline underline-offset-2 hover:text-black">WhatsApp</a> to make a booking.
@@ -499,7 +501,7 @@
      </div>
 
           <h2 class="text-center font-tan text-xl mb-4 text-[#6E6A64]">Payments Policy</h2>
-          <p class="text-sm leading-relaxed text-[#4A4A4A] flex-grow uppercase tracking-tight">
+          <p class="text-sm leading-relaxed text-[#6E6A64] flex-grow uppercase tracking-tight">
             Payments must be made prior to the appointment or before leaving. Please send proof of payment to our email or WhatsApp.
             <br><br>
             We accept <strong>Cash or EFT</strong>. Card facilities are coming soon. Gratuities are not included but always appreciated.
@@ -522,7 +524,7 @@
 
 
           <h2 class=" text-center font-tan text-xl mb-4 text-[#6E6A64]">Cancellations</h2>
-          <p class="text-sm leading-relaxed text-[#4A4A4A] flex-grow">
+          <p class="text-sm leading-relaxed text-[#6E6A64] flex-grow">
             Rescheduling or cancellations must be made <strong>24 hours prior</strong> to your appointment.
             <br><br>
             If not made within this period, you are liable to pay <span class="font-bold">50% of your treatment fee</span> in order to book with us again.
@@ -553,7 +555,7 @@
        </div>
 
           <h2 class=" text-center font-tan text-xl mb-4 text-[#6E6A64]">Late Arrival</h2>
-          <p class="text-sm leading-relaxed text-[#4A4A4A] flex-grow">
+          <p class="text-sm leading-relaxed text-[#6E6A64] flex-grow">
             Please be punctual. If you are late, we will try to help, but your time cannot be extended. 
             <br><br>
             Arrivals <strong>over 20 minutes late</strong> will be automatically cancelled. No-shows are liable for 50% of the treatment fee.
@@ -590,7 +592,7 @@
           <img src="/images/giftcard.jpeg" class="w-full h-full rounded-xl object-cover shadow-sm">
          </div>
           
-          <p class="text-sm leading-relaxed text-[#4A4A4A] flex-grow mx-auto p-4 text-center">
+          <p class="text-sm leading-relaxed text-[#6E6A64] flex-grow mx-auto p-4 text-center">
             Treat someone special with a lash or brow service! Send us a message to request a gift voucher and payment details.
             <br><br>
               <a href="https://wa.me/0631879603">
@@ -603,21 +605,87 @@
   </section>
 
   <!-- REVIEWS -->
-  <section id="reviews" class="w-full py-16 px-6 mx-auto lg:px-20 max-w-screen-2xl">
-    <div class="relative">
-      <button id="toggle-gift" class=" h1 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-tan text-[#F0F0F0] tracking-wide flex items-center gap-2 hover:cursor-pointer">
-        Reviews
-        <span id="arrow-gift" class="transform transition-transform duration-300 group-hover:translate-x-2">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 stroke-current" fill="none" viewBox="0 0 24 24" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
-          </svg>
-        </span>
-      </button>
-      <div id="reviews-container" class="py-10 hidden">
-        <!-- Reviews content goes here -->
+<section id="reviews" class="w-full py-16 px-6 mx-auto lg:px-20 max-w-screen-2xl">  
+  <div class="relative">
+    <!-- Header with Toggle -->
+    <h1  class="h1 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-tan text-[#F0F0F0] tracking-wide flex items-center gap-2 hover:cursor-pointer mb-10">
+      Reviews
+    </h1>
+     <!--  <span id="arrow-reviews" class="transform transition-transform duration-300 group-hover:translate-x-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 stroke-current" fill="none" viewBox="0 0 24 24" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+        </svg>
+      </span>
+    </button> -->
+ 
+    <!-- Reviews Grid -->
+<div id="reviews-container">
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+    <!-- Review Card 1 -->
+    <div class=" bg-[#F0F0F0] border border-white/90 w-full max-w-[240px] mx-auto flex flex-col items-center text-center rounded-4xl overflow-hidden shadow-[0_8px_25px_rgba(0,0,0,0.06)] transition-all duration-500 ease-in-out hover:-translate-y-2">
+      
+      <!-- White Header Bar -->
+      <div class="Lash Lunar w-full bg-white/95 py-3 text-[#6E6A64] font-semibold text-[12px] uppercase tracking-[0.3em]">
+        Lash Lunar
+      </div>
+
+      <div class="p-6 flex flex-col items-center justify-between flex-grow">
+        <!-- Review text in #6E6A64 -->
+        <p class="text-[13px] leading-relaxed text-[#6E6A64] mb-5 px-1 ">
+          "Wow I am delighted!! Huda, you are such a talented eyelash artist! The whole experience was wonderful and my lashes are event ready and perfect!!"
+        </p>
+
+        <div>
+          <!-- Stars in #6E6A64 -->
+          <div class="text-base text-[#6E6A64] mb-2 tracking-[0.15em]">★★★★★</div>
+          
+          <p class="text-[10px] uppercase tracking-[0.35em] text-[#6E6A64] font-bold">Happy Client</p>
+          <p class="text-[9px] text-[#6E6A64] opacity-70 italic mt-1 tracking-widest">verified review</p>
+        </div>
       </div>
     </div>
-  </section>
+
+    <!-- Review Card 2 -->
+    <div class="bg-[#F0F0F0] border border-white/90 w-full max-w-[240px] mx-auto flex flex-col items-center text-center rounded-4xl overflow-hidden shadow-[0_8px_25px_rgba(0,0,0,0.06)] transition-all duration-500 ease-in-out hover:-translate-y-2">
+      <div class="Lash Lunar w-full bg-white/95 py-3 text-[#6E6A64] font-semibold text-[12px] uppercase tracking-[0.3em]">
+        Lash Lunar
+      </div>
+      <div class="p-6 flex flex-col items-center justify-between flex-grow">
+        <p class="text-[13px] leading-relaxed text-[#6E6A64] mb-5 px-1 ">
+          "Excellent service from Huda for the application and removal of my lash extensions! They were so pretty."
+        </p>
+        <div>
+          <div class="text-base text-[#6E6A64] mb-2 tracking-[0.15em]">★★★★★</div>
+          <p class="text-[10px] uppercase tracking-[0.35em] text-[#6E6A64] font-bold">Happy Client</p>
+          <p class="text-[9px] text-[#6E6A64] opacity-70 italic mt-1 tracking-widest">verified review</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Review Card 3 -->
+    <div class="bg-[#F0F0F0] border border-white/90 w-full max-w-[240px] mx-auto flex flex-col items-center text-center rounded-4xl overflow-hidden shadow-[0_8px_25px_rgba(0,0,0,0.06)] transition-all duration-500 ease-in-out hover:-translate-y-2">
+      <div class="Lash Lunar w-full bg-white/95 py-3 text-[#6E6A64] font-semibold text-[12px] uppercase tracking-[0.3em]">
+        Lash Lunar
+      </div>
+      <div class="p-6 flex flex-col items-center justify-between flex-grow">
+        <p class="text-[13px] leading-relaxed text-[#6E6A64] mb-5 px-1  ">
+          "Great attention to detail. She really takes her time to make sure everything is perfect. My lashes last for weeks!"
+        </p>
+        <div>
+          <div class="text-base text-[#6E6A64] mb-2 tracking-[0.15em]">★★★★★</div>
+          <p class="text-[10px] uppercase tracking-[0.35em] text-[#6E6A64] font-bold">Happy Client</p>
+          <p class="text-[9px] text-[#6E6A64] opacity-70 italic mt-1 tracking-widest">verified review</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+    </div>
+  </div>
+</section>
+
 
 <!-- CONTACT -->
 <section id="contact" class="w-full py-16 px-4 sm:px-6 lg:px-20 mx-auto max-w-screen-2xl">

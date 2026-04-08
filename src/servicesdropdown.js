@@ -33,4 +33,16 @@ export function initServicesDropdown() {
     arrowGift.classList.toggle("rotate-180");
   });
 
+  const toggleReviews = document.getElementById("toggle-reviews");
+  const reviewsContainer = document.getElementById("reviews-container");
+  const arrowReviews = document.getElementById("arrow-reviews");
+
+  if (!toggleReviews || !reviewsContainer || !arrowReviews) return;
+
+  toggleReviews.addEventListener("click", () => {
+    reviewsContainer.classList.toggle("hidden");
+    arrowsReviews.classList.toggle("rotate-180");
+    
+  });
+
 }
