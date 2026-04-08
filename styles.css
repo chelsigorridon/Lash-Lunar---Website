@@ -8,11 +8,24 @@
 
 .h1{
     font-family: 'TAN-PEARL', serif;
-    font-weight: 200;
+    font-weight: 300;
+   ;
     color: #F0F0F0;
-    
-    
+/* Added animation properties */
+    opacity: 0; 
+    animation: slideInFromSide 1.4s ease-out forwards;
+}
 
+@keyframes slideInFromSide {
+    from {
+        opacity: 0;
+        transform: translateX(-50px); /* Slides in from the left */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
 }
 
 p{ 
