@@ -46,7 +46,7 @@
 
     <!-- MOBILE TRIGGER -->
     <div id="nav-Btn" class="md:hidden">
-        <button onclick="document.getElementById('mobile-menu').classList.remove('hidden')" class="focus:outline-none">
+        <button class="focus:outline-none">
             <img src="/images/Menu.svg" alt="Menu" class="w-8 h-8">
         </button>
     </div>
@@ -54,7 +54,7 @@
 
 <!-- MOBILE MENU OVERLAY (Keep this outside) -->
 <div id="mobile-menu" class="hidden fixed inset-x-0 top-10 mx-auto w-[85%] max-w-[320px] h-auto bg-[#F4F4F4]/95 backdrop-blur-md flex flex-col items-center justify-center z-[60] md:hidden border border-white/90 shadow-2xl p-8 rounded-[3rem]">
-    <button onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="absolute top-6 right-8 text-[#6E6A64] text-4xl font-light">&times;</button>
+    <button id="close-menu"  class="absolute top-6 right-8 text-[#6E6A64] text-4xl font-light">&times;</button>
     <ul class="flex flex-col gap-5 text-[#6E6A64] text-center w-full mt-4">
         <li><a href="#home" class="block text-[11px] uppercase tracking-[0.3em] py-3 rounded-full hover:bg-[#6E6A64] hover:text-white transition-all">Home</a></li>
         <li><a href="#about" class="block text-[11px] uppercase tracking-[0.3em] py-3 rounded-full hover:bg-[#6E6A64] hover:text-white transition-all">About</a></li>
