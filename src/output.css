@@ -248,8 +248,26 @@
   .right-\[-10\%\] {
     right: -10%;
   }
+  .left-\[-30\%\] {
+    left: -30%;
+  }
   .left-\[-35\%\] {
     left: -35%;
+  }
+  .left-\[-40\%\] {
+    left: -40%;
+  }
+  .left-\[-42\%\] {
+    left: -42%;
+  }
+  .left-\[-43\%\] {
+    left: -43%;
+  }
+  .left-\[-44\%\] {
+    left: -44%;
+  }
+  .left-\[-45\%\] {
+    left: -45%;
   }
   .left-\[10\%\] {
     left: 10%;
@@ -410,8 +428,14 @@
   .h-\[1em\] {
     height: 1em;
   }
-  .h-\[50\%\] {
-    height: 50%;
+  .h-\[40\%\] {
+    height: 40%;
+  }
+  .h-\[55\%\] {
+    height: 55%;
+  }
+  .h-\[60\%\] {
+    height: 60%;
   }
   .h-auto {
     height: auto;
@@ -437,8 +461,14 @@
   .w-\[1em\] {
     width: 1em;
   }
-  .w-\[50\%\] {
-    width: 50%;
+  .w-\[40\%\] {
+    width: 40%;
+  }
+  .w-\[55\%\] {
+    width: 55%;
+  }
+  .w-\[60\%\] {
+    width: 60%;
   }
   .w-\[85\%\] {
     width: 85%;
@@ -455,17 +485,11 @@
   .max-w-\[280px\] {
     max-width: 280px;
   }
-  .max-w-\[300px\] {
-    max-width: 300px;
-  }
   .max-w-\[320px\] {
     max-width: 320px;
   }
   .max-w-screen-2xl {
     max-width: var(--breakpoint-2xl);
-  }
-  .max-w-sm {
-    max-width: var(--container-sm);
   }
   .max-w-xl {
     max-width: var(--container-xl);
@@ -487,12 +511,6 @@
   }
   .border-collapse {
     border-collapse: collapse;
-  }
-  .rotate-0 {
-    rotate: 0deg;
-  }
-  .rotate-90 {
-    rotate: 90deg;
   }
   .rotate-180 {
     rotate: 180deg;
@@ -585,9 +603,6 @@
   .overflow-hidden {
     overflow: hidden;
   }
-  .scroll-smooth {
-    scroll-behavior: smooth;
-  }
   .rounded-4xl {
     border-radius: var(--radius-4xl);
   }
@@ -596,9 +611,6 @@
   }
   .rounded-\[3rem\] {
     border-radius: 3rem;
-  }
-  .rounded-\[50\%_50\%_0_0\] {
-    border-radius: 50% 50% 0 0;
   }
   .rounded-full {
     border-radius: calc(infinity * 1px);
@@ -690,21 +702,6 @@
   .object-cover {
     object-fit: cover;
   }
-  .object-\[30\%_60\%\] {
-    object-position: 30% 60%;
-  }
-  .object-\[center_20\%\] {
-    object-position: center 20%;
-  }
-  .object-\[center_30\%\] {
-    object-position: center 30%;
-  }
-  .object-\[center_35\%\] {
-    object-position: center 35%;
-  }
-  .object-\[center_40\%\] {
-    object-position: center 40%;
-  }
   .object-\[center_50\%\] {
     object-position: center 50%;
   }
@@ -714,26 +711,8 @@
   .object-\[center_62\%\] {
     object-position: center 62%;
   }
-  .object-\[center_70\%\] {
-    object-position: center 70%;
-  }
-  .object-\[center_80\%\] {
-    object-position: center 80%;
-  }
   .object-\[center_90\%\] {
     object-position: center 90%;
-  }
-  .object-\[center_100\%\] {
-    object-position: center 100%;
-  }
-  .object-\[left_60\%\] {
-    object-position: left 60%;
-  }
-  .object-\[right_60\%\] {
-    object-position: right 60%;
-  }
-  .object-center {
-    object-position: center;
   }
   .object-top {
     object-position: top;
@@ -801,10 +780,6 @@
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
-  }
-  .text-3xl {
-    font-size: var(--text-3xl);
-    line-height: var(--tw-leading, var(--text-3xl--line-height));
   }
   .text-4xl {
     font-size: var(--text-4xl);
