@@ -482,11 +482,11 @@
   .border-collapse {
     border-collapse: collapse;
   }
-  .scale-150 {
-    --tw-scale-x: 150%;
-    --tw-scale-y: 150%;
-    --tw-scale-z: 150%;
-    scale: var(--tw-scale-x) var(--tw-scale-y);
+  .rotate-0 {
+    rotate: 0deg;
+  }
+  .rotate-90 {
+    rotate: 90deg;
   }
   .rotate-180 {
     rotate: 180deg;
@@ -502,9 +502,6 @@
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
-  .grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .flex-col {
     flex-direction: column;
@@ -684,17 +681,47 @@
   .object-cover {
     object-fit: cover;
   }
-  .object-\[20\%_60\%\] {
-    object-position: 20% 60%;
-  }
   .object-\[30\%_60\%\] {
     object-position: 30% 60%;
+  }
+  .object-\[center_20\%\] {
+    object-position: center 20%;
+  }
+  .object-\[center_30\%\] {
+    object-position: center 30%;
+  }
+  .object-\[center_35\%\] {
+    object-position: center 35%;
+  }
+  .object-\[center_40\%\] {
+    object-position: center 40%;
   }
   .object-\[center_50\%\] {
     object-position: center 50%;
   }
+  .object-\[center_60\%\] {
+    object-position: center 60%;
+  }
   .object-\[center_62\%\] {
     object-position: center 62%;
+  }
+  .object-\[center_70\%\] {
+    object-position: center 70%;
+  }
+  .object-\[center_80\%\] {
+    object-position: center 80%;
+  }
+  .object-\[center_90\%\] {
+    object-position: center 90%;
+  }
+  .object-\[center_100\%\] {
+    object-position: center 100%;
+  }
+  .object-\[left_60\%\] {
+    object-position: left 60%;
+  }
+  .object-\[right_60\%\] {
+    object-position: right 60%;
   }
   .object-center {
     object-position: center;
@@ -1316,21 +1343,6 @@
     }
   }
 }
-@property --tw-scale-x {
-  syntax: "*";
-  inherits: false;
-  initial-value: 1;
-}
-@property --tw-scale-y {
-  syntax: "*";
-  inherits: false;
-  initial-value: 1;
-}
-@property --tw-scale-z {
-  syntax: "*";
-  inherits: false;
-  initial-value: 1;
-}
 @property --tw-rotate-x {
   syntax: "*";
   inherits: false;
@@ -1555,6 +1567,21 @@
   inherits: false;
   initial-value: 0;
 }
+@property --tw-scale-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
 @keyframes pulse {
   50% {
     opacity: 0.5;
@@ -1563,9 +1590,6 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
-      --tw-scale-x: 1;
-      --tw-scale-y: 1;
-      --tw-scale-z: 1;
       --tw-rotate-x: initial;
       --tw-rotate-y: initial;
       --tw-rotate-z: initial;
@@ -1618,6 +1642,9 @@
       --tw-translate-x: 0;
       --tw-translate-y: 0;
       --tw-translate-z: 0;
+      --tw-scale-x: 1;
+      --tw-scale-y: 1;
+      --tw-scale-z: 1;
     }
   }
 }
